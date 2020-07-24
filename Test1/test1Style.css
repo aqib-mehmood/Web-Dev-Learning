@@ -1,0 +1,96 @@
+body ,html{
+	font-family: 'Roboto Slab', serif;
+	color: white;
+	height: 100%;
+}
+.bg_image{
+	background-image: url("back.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	filter: brightness(50%) blur(5px);
+}
+
+.container{
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	right: 10%;
+	text-align: left;
+	
+
+}
+
+.size{
+	font-size: 60px;
+}
+#heading{
+	float: left;
+
+}
+
+#heading p{
+	margin-top: -8%;
+	margin-left: 15%;
+}
+#heading ul{
+	list-style-type: none;
+	display: block;
+}
+.highlight{
+	color: #ed1a44;
+}
+
+nav{
+	float: right;
+	margin-top: 0.5%;
+}
+nav li{
+	list-style-type: none;
+	display: inline;
+	padding: 15px;
+
+}
+.active{
+	color: #ed1a44;
+
+}
+section{
+	margin-top: 30%;
+}
+
+#section h1{
+	font-size: 60px;
+}
+#section p{
+	font-family: 'Noto Serif', serif;
+	font-size: auto;
+	margin-top: 2%;
+}
+section u{
+	text-decoration-style: dashed;
+	cursor: pointer;
+}
+#section button{
+	margin-top: 3%;
+}
+
+.buttons button{
+	align-content: space-between;
+	border-style: none;
+	border-radius: 3%;
+	padding: 1%;
+	font-size: 16px;
+	color: white;
+	background-color: rgba(199, 193, 193,0.3);
+
+}
+
+
+.contact_button button{
+	float: right;
+	background-color: #ed1a44;
+}
+
