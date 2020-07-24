@@ -1,0 +1,266 @@
+body,html{
+    background-color:white;
+    
+    color: #3f3f3f;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+#header1{
+    background-color: #5d7685;
+    color: white;
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+nav li{
+    display: inline-block;
+    padding: 1% 2%;
+    
+}
+
+
+.float_right{
+    float: right;
+    padding: 1% 2%;
+}
+
+nav li:hover,.float_right:hover{
+    background-color: tomato;
+}
+
+.active{
+    background-color: #3A4B53;
+}
+.pro_active{
+    color: #26e61f;
+}
+.super_script{
+    border: 2px solid #26e61f;
+    border-radius: 50%;
+    background-color: #26e61f;
+    color: black;
+}
+
+
+
+
+#my_profile,#group,#interest,#notification,#New_post,.post,#upcoming_event,#friend_request,#ads,#bugs{
+   box-shadow: 0 0 5px  rgba(110, 110, 110, 0.7);
+
+}
+
+#my_profile,#group,#interest,#notification{
+    width: 70%;
+    padding: 0.5% 1%;
+    text-align: center;
+
+}
+
+#upcoming_event,#friend_request,#ads,#bugs{
+    width: 50%;
+    padding: 0.5% 1%;
+    text-align: center;
+}
+
+#left, #middle, #right{
+    float: left;
+    width: 30%;
+    position: relative;
+    left: 7%;
+    
+}
+
+
+#New_post,.post{
+    width: 150%;
+    padding: 0.5% 1%;
+    display: block;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+
+#left{
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-right: -7%;
+
+}
+
+
+#right{
+    margin-left: 17%;
+
+}
+
+
+#my_profile p{
+    text-align: left;
+    padding-left: 5%;
+}
+
+/*To center an image, set left and right margin to auto, and make it into a block element.*/
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+/*Designing of other element after placing at right place*/
+.profile_info{
+    color: #093d53;
+    padding-right: 4%;
+}
+
+#group{
+    background-color: #7D97A4;
+    
+}
+#group button{
+    background-color: #7D97A4;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding: 3% 5%;
+
+}
+.new{
+    color: rgb(255, 255, 255);
+}
+
+
+#interest a{
+    background-color: #7D97A4;
+    color: #000000;
+    text-decoration: none;
+    padding: 2% 3%;
+    
+}
+#interest{
+    padding-top: 1%;
+    text-align: left;
+    padding-bottom: 10%;
+    font-size: 15px;
+    
+}
+
+
+#notification{
+    background-color: #E0E5E9;
+    color: #000000;
+    text-align: left;
+    font-size: 15px;
+    
+}
+#notification p{
+    margin: 2%;
+}
+
+
+#middle{
+    color: black;
+}
+#middle button{
+    background-color: #48636E;
+    color: #ffffff;
+    margin: 2%;
+    border: none;
+    padding: 1% 3%;
+
+}
+
+#New_post input{
+    width: 95%;
+    height: 50px;
+    margin: 2%;
+}
+
+#New_post button{
+    margin: 2%;
+    
+}
+
+.post .pro_img{
+    padding-top: 2%;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.post p{
+    margin: 2%;
+}
+
+.post .time{
+    float: right;
+}
+
+.post_img{
+    margin: 2%;
+    height: 250px;
+    width: 45%;
+
+}
+
+.friend_name{
+    padding: 2%;
+}
+.post .friend_name,.pro_img{    /*make both img and text display inline block and vertical align middle*/
+    display: inline-block; 
+    vertical-align: middle;
+
+}
+
+#upcoming_event,#friend_request{
+    padding-bottom: 5%;
+}
+
+#upcoming_event img{
+    height: 130px;
+    width: 90%;
+}
+#upcoming_event h4{
+    font-weight: bold;
+}
+#upcoming_event button{
+    border: none;
+    background-color: #E0E5E9;
+    height: 30px;
+    width: 90%;
+    
+}
+#friend_request button{
+    border: none;
+    height: 30px;
+    width: 45%;
+    color: white;
+    
+}
+.accept{
+    background-color: green;
+}
+.del{
+    background-color: red;
+}
+
+#bugs{
+    height: 100px;
+    
+}
+.bug{
+    color: red;
+    position: relative;
+    top: 40%;
+}
+
+
+
+
+
+
+
