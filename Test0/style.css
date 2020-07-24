@@ -1,0 +1,159 @@
+.container{
+	width: 80%;
+	overflow: hidden;
+	margin: auto;
+	font-family: 'Noto Serif', serif;
+}
+header{
+	background-color: #3C91E4;
+	color:white;
+}
+
+.highlight,i{
+	color: #ffbb48;
+}
+
+#brand h1{
+	float: left;
+	font-size: 30px;
+}
+.active{
+	color: black;
+}
+nav{
+	float: right;
+}
+ul{
+	margin-top: 5%;
+}
+
+nav li{
+	list-style-type: none;
+	display: inline;
+	padding: 15px;
+
+}
+nav ul button{
+	border-style:none;
+	width: 80px;
+	height: 30px;
+	border-radius: 2px;
+}
+
+nav ul button:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+nav li:hover{
+	cursor: pointer;
+	color: black;
+}
+
+#sectionA{
+	color: white;
+	background-image: url("background1.jpeg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 400px;
+	background-position: center;
+}
+#Text{
+	float: left;
+	margin-top: 100px;
+}
+#Text h1{
+	font-size: 30px;
+}
+#Text p{
+	font-size: 15px;
+}
+#Text button{
+	width: 150px;
+	height: 40px;
+	padding: 2px 20px;
+	background-color: white;
+	color: black;
+	border-style: none;
+	border-radius: 2px;
+	margin-right: 5px;
+
+}
+#Text button:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	border-top: groove;
+}
+
+#sectionB{
+	color: #3C91E4;
+	border: 2px solid black;
+}
+#left-paragraph{
+	float: left;
+	width: 40%;
+}
+#right-paragraph{
+	float: right;
+	width: 40%;
+}
+.container u:hover{
+	cursor: pointer;
+	color: blue;
+}
+footer{
+	background-color: #3C91E4;
+	color: white;
+	text-align: center;
+
+}
+
+/* -----Media Query------ */
+
+/* --Note: In using max-width the pixels order will be in descending order. For Example first 1024px then 768px then 480px and so on..*/
+/* --Note: On the other hand, the order will be opposite in min-width case. For Example first 300px then 500px then 768px and so on..*/
+
+
+@media screen and (max-width: 768px){
+	body{
+		background-color: blue;
+	}
+}
+
+@media screen and (max-width: 500px){
+	body{
+		background-color: #ffbb48;
+	}
+	header{
+		overflow: hidden;
+		float: none;
+	}
+	#Text h1{
+		font-size: 30px;
+	}
+	nav ul{
+		display: inline-block;
+		padding: 1%;
+		float: none;
+	}
+	#sectionA{
+		margin-top: 0%;
+		padding-top: 0;
+	}
+	
+	#left-paragraph{
+		float: none;
+		width: auto;
+		text-align: justify;
+	}
+	#right-paragraph{
+		float: none;
+		width: auto;
+		text-align: justify;
+	}
+
+}
+
+
