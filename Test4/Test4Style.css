@@ -1,0 +1,99 @@
+body{
+	background-color: black;
+	color: white;
+	height: 100%;
+	overflow: auto;
+	font-family: 'Dosis', sans-serif;
+	font-size: 17px;
+}
+.bg_image{
+	background-image: url('back.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 600px;
+	border-bottom: 1px solid yellow;
+	
+}
+.top_container .main_heading{
+	text-align: center;
+
+}
+.main_heading h1{
+	color: #2dcbed;
+
+}
+.main_heading p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	margin: 0% 20%;
+	font-size: 17px;
+	font-weight: 0;
+}
+.btn .btn1,.btn2{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	border-radius: 5px;
+	border-style: hidden;
+	border: 0.5px solid;
+	padding: 1% ;
+	margin-top: 2%;
+	font-size: 15px;
+}
+.btn .btn1{
+	border-style: none;
+	background-color: #2dcbed;
+}
+section .listing{
+	padding-bottom: 3%;
+	margin-bottom: 2%;
+	border-bottom: 1px solid yellow;
+}
+.Middle_container .flexing{
+	margin-top: 2%;
+	text-align: center;
+	list-style-type: none;
+	display: flex;
+}
+.flexing .item1 p,.item3 i{
+	color: rgb(200, 200, 200);
+}
+.item1,.item2,.item3{
+	flex: 1;
+}
+.item3 i{
+	padding-right: 15px;
+}
+.submit_btn{
+	background-color: #2dcbed;
+	color: white;
+	border-style: none;
+	padding: 10px 20px; 
+}
+input{
+	padding: 8px;
+	width: 50%;
+}
+footer .bold{
+	font-weight: 900;
+	
+}
+.list_items p{
+	color: rgb(155, 155, 155);
+
+}
+.flexing{
+	margin-left: 2%;
+	margin-right: 2%;
+	list-style-type: none;
+	display: flex;
+}
+
+footer .item1,.item2,.item3,.item4,.item5{
+	flex: 1;
+}
+footer .copyright{
+	text-align: center;
+}
+
