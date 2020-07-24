@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- If you are using bootstrap locally downloaded into our computer then do the following things to connect to bootstrap.
+    1- First, Download bootstrap and jquery files.
+    2- Secondly, change all the path/link or define the path to your own files of css and js.  
+    That's all done!-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Cusotom CSS: This is custom css that you can add yourself
+    <link rel="stylesheet" href="custom.css">-->
+    
+    <!-- Title of page-->
+    <title>Learning Bootstrap</title>
+
+
+</head>
+<body>
+
+    <button class="btn btn-success" onclick="$(this).hide();">Click me!</button>
+
+    <!-- 
+        Nesting the grid. Syntax is defined below, just remember that nested grid inherit the outer grid that 
+        means if outer grid is of 12 col the inner grid then set itslef by keeping the outer grid col.
+    -->
+     
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 bg-danger"> outer most div
+                <div class="row">
+                    <div class="col-md-6 bg-primary"> inner div 1</div>
+                    <div class="col-md-6 bg-dark"> inner div 2</div>
+                </div>
+            </div>
+            <div class="col-md-6 bg-secondary">outer most div</div>
+        </div>
+    </div>
+
+    <!-- 
+        -> Ordering in bootstrap.
+        -> Useful when you want to exchage content on different break-point.
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-md-4 bg-danger">
+                this is div 1
+            </div>
+            <div class="col-md-4 bg-success">
+                this is div 2
+            </div>
+            <div class="col-md-2 bg-primary">
+                this is div 3
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        -> Typography Classes
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>This is main heading <small>Secondary heading</small></h1>
+                <p class="lead">This is leading paragraph</p>
+                <p>This is normal paragraph</p>
+                <p><small>Term and Condition</small></p>
+            </div>
+            <div class="col-sm-12">
+                <del>Deleted text</del>
+            </div>
+            <div class="col-sm-12">
+                <p class="text-left">left align</p>
+                <p class="text-right">right align</p>
+                <p class="text-center">center align</p>
+                <p class="text-justify">justify text</p>
+                <p class="text-uppercase">this is uppercase text</p>
+                <blockquote class="blockquote">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Cupiditate porro modi quis debitis dolor adipisci quibusdam reiciendis optio soluta. 
+                        Consequatur unde inventore vitae tenetur dolores sequi, recusandae maiores doloribus ad.
+                    </p>
+                    <footer class="blockquote-footer">Aqib Mehmood</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        -> Images
+        -> img-fluid - means set the image accordance to the parent column length.
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="images/gradnight.jpg" alt="Grad night images" class="img-fluid img-rounded" >
+            </div>
+            <div class="col-sm-4">
+                <img src="images/gradnight.jpg" alt="Grad night images" class="img-fluid rounded-circle" >
+            </div>
+            <div class="col-sm-4">
+                <img src="images/gradnight.jpg" alt="Grad night images" class="img-fluid img-thumbnail" >
+            </div>
+            
+        </div>
+    </div><br>
+
+    <!--
+        -> Tables
+        -> There are lot of properties of table to apply.
+        -> table-bordered, table-dark, table-striped,table-hover, table-borderless, thead-dark, table-sm,md,lg,xl , table-responsive
+    -->
+    <table class="table table-borderless table-md"> 
+            <thead class="thead-dark">
+                <tr class="table-primary">
+                    <th>#.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-success">
+                    <td>1</td>
+                    <td>Aqib</td>
+                    <td>20</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>2</td>
+                    <td>Amir</td>
+                    <td>19</td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>3</td>
+                    <td>Arbab</td>
+                    <td>20</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>4</td>
+                    <td>Ali</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+    </table>
+
+    <!--
+        -> Jumbotron 
+        -> add a gray box around text to show some special information.
+    -->
+    <div class="jumbotron">
+        <h1>Use of Jumbotron</h1>
+        <p>
+            This will add the gray box arround the text to show some special information.
+        </p>
+    </div>
+
+    <!--
+        -> Alert
+        -> alert class and then alert type i.e contextual classes
+
+    -->
+
+    <div class="alert alert-success">
+        <strong>Success!</strong> Indicate a successful or positive action.
+    </div>
+
+    <!--
+        -> Alert Link
+        -> link inside the alert message using the class alert-link
+    -->
+    <div class="alert alert-success">
+        <strong>Success!</strong> you should <a href="#" class="alert-link">read this message</a> 
+    </div>
+    
+    <!--
+        -> Closing Alert
+        -> &time; is an abbrevation of x i.e cross.
+        -> fade show classes show fadiong effect when alert is closing
+    -->
+    <div class="alert alert-danger alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert" >&times;</button>
+        <strong>Danger!</strong> Something wrong happen.
+    </div>
+
+    <!--
+        -> Buttons
+    -->
+    <button class="btn btn-outline-primary btn-sm">primary</button>
+    <button class="btn btn-success ">success</button>
+    <button class="btn btn-danger ">danger</button>
+    <button class="btn btn-info ">info</button>
+    <br>
+    <button class="btn btn-secondary btn-block">Block or full width secondary Button</button>
+    <br>
+    <button class="btn btn-danger ">
+        <span class="spinner-border spinner-border-sm"></span> Danger
+    </button>
+    <button class="btn btn-danger ">
+        <span class="spinner-grow spinner-grow-sm"></span> Danger
+    </button>
+<br>
+    <!--
+        -> Button Group
+        -> use div and apply btn-group class
+    -->
+    <div class="btn-group">
+        <button class="btn btn-success">Button1</button>
+        <button class="btn btn-success">Button2</button>
+    </div>
+    <div class="btn-group-vertical">
+        <button class="btn btn-success">Button1</button>
+        <button class="btn btn-success">Button2</button>
+        <div class="btn-group">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">DropDown</button>
+            <div class="dropdown-menu">
+                <button class="dropdown-item "><a href="">sub1</a></button>
+                <button class="dropdown-item ">sub2</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+        -> Badges
+        -> Use to add additional inforamtion to content
+    -->
+    <div>
+        <button class="btn btn-primary">Meassage<span class="badge badge-info">4</span></button>
+    </div>
+    <br>
+    <br>
+    <!--
+        -> Progress Bar
+        -> .progress class, then progress-bar, progress-bar-animated, progress-bar-stripped
+    -->
+
+    <div class="progress">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 70%;">Progress Bar</div>
+    </div>
+    <br>
+    <div class="progress">
+        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 30%;">Used</div>
+        <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width: 60%;">Free</div>
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 10%;">Danger</div>
+    </div><br>
+
+    <!--
+        -> Pagination
+        -> Add page number and next and previous page button
+        -> apply to ul list
+    -->
+    <ul class="pagination">
+        <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item disabled"><a href="#" class="page-link">Next</a></li>
+    </ul>
+
+    <!--
+        -> Tooltip
+        -> small popup box appear when user hover the specific element.
+    -->
+    <div>
+        <a href="#" data-toggle="tooltip" title="Link to Bahria University">BUKC</a>
+    </div>
+
+
+    <!--
+        -> Popover 
+        -> Similar to tooltip difference is when user click the specific element then it shows  the specif text and 
+        this contain text more than tooltip
+    -->
+    <div> 
+        <a href="#" data-toggle="popover" title="Title of Popover text" data-content="This is the blabla text">Popover </a>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <!-- jQuery library -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
