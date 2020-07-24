@@ -1,2 +1,2 @@
-# Web-Dev-Learning - html,css.
-All tasks are performed Using basic html, css.
+# Web-Dev-Learning - html,css, JavaScript, BootStrap.
+All tasks are performed Using basic html, css, JavaScript, Bootstrap.
