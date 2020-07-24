@@ -1,0 +1,95 @@
+body{
+	text-align: center;
+}
+
+.heading{
+	color: #f57acc;
+}
+
+.head{
+	margin-left: 45%;
+	width: 13%;
+	height: 100px;
+	border: 1px solid rgb(89, 135, 225);
+	background-color: rgb(89, 135, 225);
+	border-top-right-radius: 80px;
+	border-top-left-radius: 80px;
+	margin-bottom: 0.5%;
+}
+.body{
+	margin-left: 45%;
+	width: 13%;
+	height: 180px;
+	border: 1px solid rgb(89, 135, 225);
+	background-color: rgb(89, 135, 225);
+	border-bottom-right-radius: 50px; 
+	border-bottom-left-radius: 50px;
+}
+.left_arm,.right_arm,.left_leg,.right_leg{
+	width: 2%;
+	height: 80px;
+	border: 1px solid rgb(89, 135, 225);
+	background-color: rgb(89, 135, 225);
+	margin-bottom: 1%;
+	border-radius: 50px;
+}
+.left_arm{
+	margin-top: -14.5%;
+	margin-left: 42.5%;
+}
+.right_arm{
+	margin-top: -7.5%;
+	margin-left: 58.5%;
+}
+.left_leg{
+	margin-top: 6%;
+	margin-left: 48%;
+}
+.right_leg{
+	margin-top: -7.5%;
+	margin-left: 53.5%;
+}
+.left_eye,.right_eye{
+	background-color: white;
+	height: 15px;
+	width: 15px;
+	border: 1px solid rgb(89, 135, 225);
+	border-radius: 50%;
+	float: left;
+	margin-right: 7%;
+	margin-top: -4%;
+
+
+}
+.left_eye{
+	position: fixed;
+	left: 48%;
+}
+.right_eye{
+	position: fixed;
+	left: 54%;
+	
+}
+.left_arm:hover {
+	transform: rotate(30deg);
+}
+.right_arm:hover {
+	transform: rotate(-30deg);
+}
+.left_leg:hover{
+	transform: rotate(30deg);
+}
+.right_leg:hover{
+	transform: rotate(-30deg);
+}
+.head:hover{
+	transition: 1s;
+	padding: 0px 30px;
+	margin-left: 42.5%;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 100px; 
+}
+
+
+
+
