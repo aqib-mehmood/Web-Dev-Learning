@@ -1,0 +1,98 @@
+body ,html{
+	font-family: 'Noto Sans KR', sans-serif;
+	height: 100%;
+	width: auto;
+}
+
+.bg_image{
+	background-image: url("back.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50%;
+	width: auto;
+	filter: brightness(40%);
+}
+header{
+	position: absolute;
+	top: 1%;
+	left: 5%;
+	right: 5%;
+	color: white;
+
+}
+.nav_bar nav{
+	float: right;
+	margin-top: -7%;
+
+}
+
+
+nav li{
+	list-style-type: none;
+	display: inline;
+	padding: 10px;
+}
+.underline{
+	border-bottom: 1px solid yellow;
+}
+
+.sec_heading{
+	text-align: center;
+
+}
+.sec_heading h1{
+	font-size: 70px;
+	word-spacing: 3px;
+	letter-spacing: 5px;
+
+}
+.sec_heading p{
+	font-family: 'Gotu', sans-serif;
+	font-size: 20px;
+	margin-top: -2%;
+
+}
+.sec_heading .btn_02, .btn_01 {
+	font-size: 15px;
+	padding: 15px;
+	border-style: 0.5px solid white;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	letter-spacing: 3px;
+	margin-top: 1%;
+	border-radius: 3px;
+
+}
+.sec_heading .btn_02 {
+	background-color: #fc4949;
+}
+.container1{
+	width: 96%;
+	position: absolute;
+	right: 5%;
+	left: 5%;
+	text-align: justify;
+}
+.container1 .left_section{
+	font-family: 'Gotu', sans-serif;
+	float: left;
+	width: 30%;
+	margin-right: 2%;
+}
+.container1 .center_section{
+	font-family: 'Gotu', sans-serif;
+	float: left;
+	width: 30%;
+	margin-right: 2%;
+}
+.container1 .right_section{
+	font-family: 'Gotu', sans-serif;
+	float: left;
+	width: 30%;
+}
+.highlight_icon{
+	color: #37bae6;
+}
+
+
