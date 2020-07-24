@@ -1,0 +1,116 @@
+/*This is Comment*/
+
+body{
+	background-color: #18242B;
+	color: #ffffff;
+	margin: auto;
+	/*background-color: #363636;
+	color: #523156;*/
+	
+	
+}
+.home_header{
+	border-bottom: 3px solid blue;
+}
+.highlight{
+	color: red;
+}
+.home_header h1 {
+	float: left;
+	font-family: 'Times New roman', serif;
+	font-size: 50px;
+	color: #ffffff;
+	padding: 0px 5px 5px 5px;
+	margin-top: 0px;
+	/*color: #130f14 ;
+	color: #ff3612;
+	padding: 5%;
+	margin: 0%;
+	border: 1px dotted green;
+	background-color: #272727;
+	background-color: #363636;*/
+}
+
+.home_header ul {
+	list-style-type: none;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav{
+	text-align: right;
+	background-color: black;
+}
+.home_header a,li{
+	display: inline-block;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 5px;
+	margin:0px;
+}
+
+.home_header a:hover {
+	background-color: red;
+	color: black;
+	border-radius: 50%;
+}
+
+.home_image{
+	border: 1px solid black;
+	background-color: #363636;
+	background-image: url('../images/pcics.jpg');
+	background-size: cover;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+
+}
+marquee{
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.img_container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.img_container img{
+	height: 50%;
+	width: 50%;
+	margin:10px;
+	transition: all 1s;
+
+
+}
+.img_container img:hover{
+	transform: scale(1.1);
+	cursor: default;
+}
+footer{
+	border: 3px solid white;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
