@@ -1,0 +1,27 @@
+nav img{
+    width: 15%;
+    height: 15%;
+
+}
+
+body {
+    padding-top: 4rem;
+
+    
+  }
+
+
+  nav li a {
+    color: gold;
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+
+  @media screen and (min-width: 700px) {
+    .carousel-caption {
+        bottom: 15rem;
+    }
+}
