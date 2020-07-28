@@ -56,12 +56,12 @@ nav{
   .carousel-caption {
     bottom: 15rem;
     text-align: left;
-    text-transform: uppercase;
     
   }
 
 
   .carousel-caption .hello{
+    text-transform: uppercase;
     color: #ffffff;
     font-size: 3rem;
     font-style: italic;
@@ -70,6 +70,7 @@ nav{
 
 
   .carousel-caption h1{
+    
     color: #66fcf1;
   }
 
@@ -77,17 +78,58 @@ nav{
     color: #ffffff;
   }
 
+  .carousel-caption .higlight{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
+
   .carousel-caption button{
-    color: #ffffff;
-    border: 1px solid  #66fcf1;
+    color: #1f2833;
+    background-color: #66fcf1;
   }
 
   .carousel-caption button:hover{
-    background-color: #66fcf1;
-    color: #1f2833;
+    color: #ffffff;
+    background-color: #45a29e;
     
   }
 
+  footer{
+    background-color: #1f2833;
+    color: #c5c6c7;
+  }
+
+  footer .higlight{
+    color: #66fcf1;
+    text-transform: uppercase;
+  }
+
+
+  /*---------------------------------------End home page------------------------------------------------*/
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------Media Query------------------------------------------------*/
   
   @media screen and (max-width: 800px) {
     body{
