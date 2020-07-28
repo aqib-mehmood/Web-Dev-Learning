@@ -110,7 +110,43 @@ nav{
 
   /*---------------------------------------End home page------------------------------------------------*/
   
+  #project_page .head h1{
+    color: #7be9e3;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+  }
 
+  #project_page p{
+    font-size: 20px;
+  }
+
+
+  .projects_image img{
+    box-shadow: 0 0 5px  rgba(94, 90, 90, 0.7);
+    height: 300px;
+    width: 500px;
+    border-radius: 10%;
+    border: 2px solid #66fcf1;
+  }
+
+
+  .projects_image p a{
+    
+    color: #1f2833;
+    background-color: #66fcf1;
+    border: 1px solid #0b0c10;
+  }
+
+  .projects_image p a:hover{
+    color: #ffffff;
+    background-color: #45a29e;
+  }
+  
+  #project_page{
+    margin-bottom: 10rem;
+  }
 
 
 
