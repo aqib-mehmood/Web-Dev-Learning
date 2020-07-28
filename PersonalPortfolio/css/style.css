@@ -148,10 +148,51 @@ nav{
     margin-bottom: 10rem;
   }
 
+  /*---------------------------------------End project page------------------------------------------------*/
+
+  #about_page .head h1{
+    color: #7be9e3;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+  }
 
 
+  #about_page h2{
+    font-size: 2rem;
+    font-style: italic;
+    color: #24bbb1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  #about_page h3{
+    color: #fd3b7c;
+  }
+
+  #about_page h4{
+    color: #24bbb1;
+  }
+  .profile{
+    margin-bottom: 1rem;
+  }
+
+  #about_page .profile img{
+    box-shadow: 0 0 5px  rgba(107, 112, 112, 0.7);
+    height: 55%;
+    width: 20%;
+  }
 
 
+  #about_page .intro_para p{
+    font-size: 22px;
+  }
+
+  #about_page #fancy{
+    color: #45a29e;
+    font-size: 30px;
+  }
 
 
 
