@@ -195,11 +195,58 @@ nav{
   }
 
 
+  /*---------------------------------------End project page------------------------------------------------*/
+
+  #contact_page .head h1{
+    color: #7be9e3;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+  }
+  #contact_page .head p{
+    font-size: 22px;
+    text-align: center;
+
+  }
 
 
 
+  #contact_page h2{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    color: #45a29e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
 
+  #contact_page form{
+    width: 80%;
+    
+  }
+ 
+  #contact_page form label{
+    font-weight: bold;
+    color: #24bbb1;
+    text-align: left;
+  }
 
+  #contact_page form button{
+    border: 1px solid #0b0c10;
+    color: #1f2833;
+    background-color: #66fcf1;
+  }
+
+  #contact_page form button:hover{
+    color: #ffffff;
+    background-color: #45a29e;
+    
+  }
+
+  #contact_page form sup{
+    color: #fd3b7c;
+  }
 
 
 
@@ -208,6 +255,15 @@ nav{
 
 /*---------------------------------------Media Query------------------------------------------------*/
   
+  @media screen and (min-width: 800px) {
+    #contact_page .container form{
+      width: auto;
+      align-items: center;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  
+  }
   @media screen and (max-width: 800px) {
     body{
       padding-top: 3rem;
@@ -215,5 +271,10 @@ nav{
     .carousel-caption {
       bottom: 12rem;
     }
+
+    #contact_page form{
+      width: auto;
+    }
+  
     
   }
