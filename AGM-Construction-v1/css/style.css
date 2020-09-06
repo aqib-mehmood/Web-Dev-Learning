@@ -626,7 +626,7 @@ body{
 
 #our-partners img:hover{
     cursor: pointer;
-    transform: scale(2);
+    transform: scale(2) rotate(360deg);
     border: 2px solid #05034c;
 }
 
