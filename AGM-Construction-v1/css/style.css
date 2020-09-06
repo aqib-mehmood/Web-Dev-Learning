@@ -303,19 +303,64 @@ body{
     color: var(--secondary-color);
     font-weight: bolder;
 }
-#core-values .container h2,#core-values .container p{
+/* #core-values .container p{
+    padding: 25px;
+    box-sizing: border-box;
     text-align: left;
     color: var(--secondary-color);
-}
+} */
 
 #core-values .container h2::first-letter{
     font-size: 2em;
-    color: var(--dark-color);
+    color: var(--tertiary-color);
+    font-weight: bolder;
 }
 
-#core-values .container img{
+/* #core-values .container img{
     width: 80%;
-    height: 250px;
+    height: 200px;
+} */
+
+/*------new css-------------*/
+.core-val-card{
+    height: 300px;
+    cursor: pointer;
+}
+
+.core-val-card > .head>h2{
+    color: white !important;
+
+}
+.core-val-card .head{
+    height: 50%;
+    position: relative;
+    top: 0;
+    background: var(--dark-color);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    transform: translateY(50%);
+    z-index: 1;
+}
+.core-val-card .body{
+    height: 50%;
+    position: relative;
+    top: 0;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: left;
+    color: var(--secondary-color);
+    background: var(--tertiary-color);
+    transform: translateY(-50%);
+}
+.core-val-card .head, .body{
+   transition: 1s;
+}
+.core-val-card:hover .head{
+    transform: translateY(0);
+}
+.core-val-card:hover .body{
+    transform: translateY(0);
 }
 
 /*********************** gallery **************************/
