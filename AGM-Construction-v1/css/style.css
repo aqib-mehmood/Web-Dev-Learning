@@ -71,6 +71,7 @@ body{
 .navbar{
     margin: 0 !important;
     padding: 0 !important;
+    width: 100%;
 }
 .bg-light{
     background-color: var(--dark-color) !important;
@@ -270,6 +271,7 @@ body{
 
 .services h2
 {
+    text-align: left;
     padding-left: 10px;
 }
 
@@ -452,7 +454,7 @@ body{
     margin-bottom: 10px;
     text-align: center;
 }
-#why-us .container p{
+#why-us .container  p{
     margin-bottom: 30px;
     text-align: center;
     justify-content: center;
@@ -462,41 +464,43 @@ body{
     list-style-type:none;
 }
 #why-us .fas{
-    font-size: 2.3em;
-    margin: 10px;
+    font-size: 2em;
+    margin-right: 10px;
+    padding: 0;
 }
-#why-us  span{
-    font-size: 1.5em;
+#why-us  span h2{
+    text-align: left;
+    font-size: 2em;
 }
 #why-us ul li p{
     font-size: .95em;
 
 }
 #why-us ul li{
-    margin: 20px 0;
+    margin:  5px;
 
 }
 .why-us-head {
-    padding: 15px 0;
+    padding: 15px 5px;
 }
 
 #why-us .container .excellence{
-    color: #ffd900e7;
-    opacity: 0.7;
+    color: #05034c;
+    opacity: 0.5;
     transition: 0.2s;
 }
 #why-us .container .professionalism{
-    color: #00ffffe7;
+    color: #05034c;
     opacity: 0.5;
     transition: 0.2s;
 }
 #why-us .container .harmony{
-    color: #67ff74e7;
+    color: #05034c;
     opacity: 0.5;
     transition: 0.2s;
 }
 #why-us .container .satisfaction{
-    color: #f35f45;
+    color: #05034c;
     opacity: 0.5;
     transition: 0.2s;
 }
@@ -904,6 +908,9 @@ footer #footer-lists ul li{
     #our-partners img{
         margin: 20px auto;
     }
+    #our-partners img:hover{
+        transform: scale(1) rotate(360deg);
+    }
 
 }
 
@@ -992,6 +999,18 @@ footer #footer-lists ul li{
         padding: 20px;
     }
 
+    #why-us .fas{
+        margin-right: 10px;
+        
+    }
+
+    .services h2{
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    
+
 }
 
 @media screen and (max-width : 625px){
@@ -1033,6 +1052,11 @@ footer #footer-lists ul li{
     #facts .container ul li{
         display: block;
         text-align: center;
+        
+    }
+
+    #our-partners img:hover{
+        transform: scale(1) rotate(360deg);
     }
 
      .testimonials{
