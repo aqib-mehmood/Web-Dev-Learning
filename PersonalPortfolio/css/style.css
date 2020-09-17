@@ -1,6 +1,7 @@
 body {
   padding-top: 4rem;
   max-width: 1600px;
+  text-align: center;
 }
 
 nav img{
@@ -227,10 +228,11 @@ nav{
     
   }
  
-  #contact_page form label{
+  #contact_page  label{
     font-weight: bold;
     color: #24bbb1;
-    text-align: left;
+    text-align: left !important;
+    justify-content: left !important;
   }
 
   #contact_page form button{
