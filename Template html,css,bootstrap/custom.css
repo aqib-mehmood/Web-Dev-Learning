@@ -1,0 +1,144 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    width:100%;
+    max-width: 1660px;
+    margin: 0 auto;
+    
+
+}
+.navbar-brand img{
+    width: 100px;
+    height: 40px;
+}
+.navbar ul li{
+    padding-left: 15px;
+}
+.navbar form input{
+    width: 450px !important;
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.navbar form button .fa-search{
+    position: absolute;
+    left: 550px;
+    top: 20px;
+}
+
+.navbar ul li .fa-shopping-cart{
+    position: relative;
+    top: 10px;
+}
+
+
+.header-offer{
+    box-sizing: border-box;
+    padding: 15px;
+    width: 450px;
+    height: 200px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+#counts{
+    margin-top: 20px;
+}
+#counts .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#counts .row div .fas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    font-size: x-large;
+    color: #0f7c90;
+}
+
+#counts .row div h4{
+    font-weight: 700;
+}
+#counts .row div p{
+    color: #73726c;
+}
+
+.position-change{
+    position: relative;
+    top: -800px;
+}
+
+.jumbotron{
+    background: url(https://s.udemycdn.com/browse_components/shared-assets/purple-intersect.svg) repeat-x #6e1a52;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -750px;
+}
+.jumbotron button{
+    border: 1px solid white;
+    color: white;
+
+}
+.jumbotron button:hover{
+    border: 1px solid rgb(211, 205, 205);
+    color: white;
+
+}
+
+#top-category{
+    position: relative;
+    top: -700px;
+
+}
+
+#top-category .container .row>div{
+    padding: 15px;
+}
+.design-section{
+    position: relative;
+    top: -440px;
+
+}
+.photography-section{
+    position: relative;
+    top: -880px;
+}
+
+/*
+.card-img-top{
+    height: 150px;
+}
+*/
+
+footer{
+    position: relative;
+    top: -700px;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #73726c;
+}
+
+.subfooter .right{
+    float: right;
+}
+.subfooter .left{
+    float: left;
+}
+
+.subfooter img{
+    width: 130px;
+    height: 130px;
+    float: left;
+}
+
