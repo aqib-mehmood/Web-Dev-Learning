@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- If you are using bootstrap locally downloaded into our computer then do the following things to connect to bootstrap.
+    1- First, Download bootstrap and jquery files.
+    2- Secondly, change all the path/link or define the path to your own files of css and js.  
+    That's all done!-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Cusotom CSS: This is custom css that you can add yourself-->
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/brands.min.css" />
+
+    <!-- Title of page-->
+    <title>Learning Bootstrap</title>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"
+                    alt=""></a>
+
+            <div class="collapse navbar-collapse navbar" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <!-- <a class="nav-link" href="#">Categories <span class="sr-only">(current)</span></a> -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-hover" data-toggle="dropdown" data-display="static"
+                                aria-haspopup="true" aria-expanded="false">
+                                Categories
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg-right">
+                                <button class="dropdown-item" type="button">Developement</button>
+                                <button class="dropdown-item" type="button">Business</button>
+                                <button class="dropdown-item" type="button">IT and Software</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control  serach" type="search" placeholder="Search for anything">
+                            <button type="submit" class="btn btn-submit d-flex">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Udemy for Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teach on Udemy</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-shopping-cart"></i>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-outline-success">Log in</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn" style="background-color: #0f7c90; color: white;">Sign
+                            up</button>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <section id="carousel">
+        <img src="img/03.jpg" class="d-block w-100" alt="...">
+        <div class="container header-offer">
+            <h2><b>Last day to save</b> </h2>
+            <h5>Development and IT & Software courses on sale from $11.99. Ends today!</h5>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="What do you want to learn?"
+                    aria-label="What do you want to learn?" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex">
+                    <i class="fas fa-video"></i>
+                    <div class="text">
+                        <h4>13,000 online courses</h4>
+                        <p>Enjoy a variety of fresh topics</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <i class="fas fa-certificate"></i>
+                    <div class="text">
+                        <h4>Expert instruction</h4>
+                        <p>Find the right instructor for you</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <i class="fas fa-infinity"></i>
+                    <div class="text">
+                        <h4>Lifetime access</h4>
+                        <p>Learn on your schedule</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="category">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>The world's largest selection of courses</h2>
+                    <p>Choose from 130,000 online video courses with new additions published every month
+                    </p>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                        aria-controls="nav-home" aria-selected="true">Business</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                        aria-controls="nav-profile" aria-selected="false">Design</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                        aria-controls="nav-contact" aria-selected="false">Photography</a>
+                </div>
+                <div class="category-cards">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active d-flex business-section" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="card business-card01 " style="width: 18rem; height: auto;">
+                                <img src="https://img-a.udemycdn.com/course/240x135/1121520_55e7_8.jpg?L3WbnoB4EDhNR02fUYNsEtlhLHTlU-QstxOUdXUayRyeRaIZlVHVkmUTe3DBHiYWOFJYM6SBhY_5NTuBcLZ-N7Br0-Ntd_HTi3yo7M6LY5qiipiOlchLTslN92luIUuF"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+
+                            <div class="card business-card02" style="width: 18rem; height: auto;">
+                                <img src="https://img-a.udemycdn.com/course/240x135/567828_67d0.jpg?_C7czR0q0ETN88KoBH68VI9XVQ7U-GozE6Iuu72zCcFR7pZsBmWcbIPsPpkRtWQlyqwuidQy4v4qc07ydXF-Vc7Z96B2KOU07p7Uqeb0EkSYzRbqmpFFDIT7gj99"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+
+                            <div class="card business-card03" style="width: 18rem; height: auto;">
+                                <img src="https://img-a.udemycdn.com/course/240x135/1643044_e281.jpg?vacqgvnwGxTRPxgoTS68OWvHMMyFJuQVNZw3VT3YsEjIGxjL7cIOMgRUgqlHSmJgFQ6fUIbSQL_I5shae9xMX4scrQVp7I_IPu9dUJ3IvNkI_vzV3ka3g5dyEY5kFQ"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+
+                            <div class="card business-card03" style="width: 18rem; height: auto;">
+                                <img src="https://img-a.udemycdn.com/course/240x135/1643044_e281.jpg?vacqgvnwGxTRPxgoTS68OWvHMMyFJuQVNZw3VT3YsEjIGxjL7cIOMgRUgqlHSmJgFQ6fUIbSQL_I5shae9xMX4scrQVp7I_IPu9dUJ3IvNkI_vzV3ka3g5dyEY5kFQ"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade d-flex design-section" id="nav-profile" role="tabpanel"
+                            aria-labelledby="nav-profile-tab">
+                            <div class="card design-card01" style="width: 18rem; height: auto;">
+                                <img src="https://img-a.udemycdn.com/course/240x135/806710_db47.jpg?CbekrPMGutJRY3XdX1Q1KEyA0iiAmUI4asGpmOi5IFFL8vwIZPbcYTkHb6l-L7p-UXvb0EnwmRzgBvnYu-wkwEvI0VKQ2B3aSEOK1TDDpCzdCiyA-rpvRUNH1u7A"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+
+                            <div class="card design-card02" style="width: 18rem; height: auto;">
+                                <img src="https://img-a.udemycdn.com/course/240x135/806710_db47.jpg?CbekrPMGutJRY3XdX1Q1KEyA0iiAmUI4asGpmOi5IFFL8vwIZPbcYTkHb6l-L7p-UXvb0EnwmRzgBvnYu-wkwEvI0VKQ2B3aSEOK1TDDpCzdCiyA-rpvRUNH1u7A"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+
+                            <div class="card design-card03" style="width: 18rem; height: auto;">
+                                <img src="img/gradnight.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+
+                            <div class="card design-card03" style="width: 18rem; height: auto;">
+                                <img src="img/gradnight.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade d-flex photography-section" id="nav-contact" role="tabpanel"
+                            aria-labelledby="nav-contact-tab">
+                            <div class="card photography-card01" style="width: 18rem; height: auto;">
+                                <img src="https://img-a.udemycdn.com/course/240x135/1346444_7555_5.jpg?deP52P48z8hSiBqkSlLQEnXrQYEOI6G0f42ULnthx9uN8k8k7YDejMbblzgPHqaHNzdrDcJ5V9ANHx1KVEoIQC_s06YL_l1edrDlpxPylPJDq4ZJVWdhvVdrMmHncoNO"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+
+                            <div class="card photography-card02" style="width: 18rem; height: auto;">
+                                <img src="img/gradnight.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+
+                            <div class="card photography-card03 " style="width: 18rem; height: auto;">
+                                <img src="img/gradnight.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-text">
+                                        Introduction to Finance, Accounting, Modeling and Valuation
+                                    </h5>
+                                    <span>5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span>(1658)</span>
+                                    <p>
+                                        $18.99<span><del>$129.99</del></span>
+                                    </p>
+                                    <p>Chris Gale</p>
+                                    <span class="badge badge-warning">Best seller</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counts">
+        <div class="container position-change">
+            <div class="row">
+                <div class="col-md-4 d-flex">
+                    <i class="fas fa-video"></i>
+                    <div class="text">
+                        <h5>Go at your own pace</h5>
+                        <p>Enjoy a variety of fresh topics</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <i class="fas fa-certificate"></i>
+                    <div class="text">
+                        <h5>Learn from industry experts</h5>
+                        <p>Find the right instructor for you</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <i class="fas fa-infinity"></i>
+                    <div class="text">
+                        <h5>Find video courses on any topic</h5>
+                        <p>Learn on your schedule</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jumbotron">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h2 class="display-4">Get personal learning recommendations</h2>
+                <p class="lead">Answer a few questions for your top picks</p>
+                <button type="button" class="btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="top-category">
+
+        <div class="container">
+            <h2>Top Categories</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card photography-card02" style="width: 16rem;">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-design.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                Design
+                            </h5>
+                            <h2></h2>
+                            <span class="badge badge-warning">Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card photography-card02" style="width: 16rem;">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                Developement
+                            </h5>
+                            <h2></h2>
+                            <span class="badge badge-warning">Developement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card photography-card02" style="width: 16rem;">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                Marketing
+                            </h5>
+                            <h2></h2>
+                            <span class="badge badge-warning">Marketing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card photography-card02" style="width: 16rem;">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                IT and Software
+                            </h5>
+                            <h2></h2>
+                            <span class="badge badge-warning">IT and Software</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card photography-card02" style="width: 16rem;">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                Design
+                            </h5>
+                            <h2></h2>
+                            <span class="badge badge-warning">Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card photography-card02" style="width: 16rem;">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-business.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                Developement
+                            </h5>
+                            <h2></h2>
+                            <span class="badge badge-warning">Developement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card photography-card02" style="width: 16rem;">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-photography.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                Marketing
+                            </h5>
+                            <h2></h2>
+                            <span class="badge badge-warning">Marketing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card photography-card02" style="width: 16rem;">
+                        <img src="https://s.udemycdn.com/home/top-categories/lohp-category-music.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-text">
+                                IT and Software
+                            </h5>
+                            <h2></h2>
+                            <span class="badge badge-warning">IT and Software</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <div class="container footer">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="">Udemy for Business</a> </li>
+                        <li><a href="">Teach on Udemy</a> </li>
+                        <li><a href="">Get the app</a> </li>
+                        <li><a href="">About us</a> </li>
+                        <li><a href="">Contact us</a> </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="">Career</a> </li>
+                        <li><a href="">Blog</a> </li>
+                        <li><a href="">Help and Support</a> </li>
+                        <li><a href="">Affiliate</a> </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="">Term</a> </li>
+                        <li><a href="">Privacy policy and cookie policy</a> </li>
+                        <li><a href="">Sitemap</a> </li>
+                        <li><a href="">Featured courses</a> </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="dropdown btn-group dropup">
+                        <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Select Language
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">English</button>
+                            <button class="dropdown-item" type="button">Urdu</button>
+                            <button class="dropdown-item" type="button">French</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container subfooter">
+
+            <span>
+                <h2 class="left">Udemy</h2>
+                <p class="right">&copy; 2020 Udemy, Inc.</p>
+            </span>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- jQuery library -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
