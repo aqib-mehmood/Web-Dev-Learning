@@ -22,7 +22,9 @@ header nav{
 header nav form .search-box{
     width: 500px !important;
 }
-
+#category{
+    margin-top: 30px;
+}
 #category h2{
     color: #045cff;
 }
@@ -52,9 +54,39 @@ header nav form .search-box{
 }
 
 
+/*-----------shipping page--------------*/
 
+#shipping-form{
+    margin-top: 30px;
+}
+.form-details, .order-summary{
+    margin-bottom: 30px;
+}
 
+#shipping-form .heading{
+    color: #045cff;
+}
 
+#shipping-form .subtotal ,.shipping-fee, .total-amount{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-option > label{
+    margin-right: 30px;
+}
+
+.delivery-option label,.inputDeliverylabel{
+    cursor: pointer;
+}
+
+.save-btn{
+    width: 150px;
+}
+
+.proceed-btn{
+    width: 100%;
+}
 
 
 
