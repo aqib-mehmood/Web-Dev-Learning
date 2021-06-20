@@ -11,13 +11,6 @@ body{
 header .container{
     width: 100% !important;
 }
-header nav{
-    
-    position: sticky;
-    top: 0;
-    background-color: aqua;
-
-}
 
 header nav form .search-box{
     width: 500px !important;
@@ -59,7 +52,7 @@ header nav form .search-box{
 #shipping-form{
     margin-top: 30px;
 }
-.form-details, .order-summary{
+#shipping-form .form-details, .order-summary{
     margin-bottom: 30px;
 }
 
@@ -68,7 +61,6 @@ header nav form .search-box{
 }
 
 #shipping-form .subtotal ,.shipping-fee, .total-amount{
-    display: flex;
     justify-content: space-between;
 }
 
@@ -80,11 +72,11 @@ header nav form .search-box{
     cursor: pointer;
 }
 
-.save-btn{
+#shipping-form .save-btn{
     width: 150px;
 }
 
-.proceed-btn{
+#shipping-form .proceed-btn{
     width: 100%;
 }
 
